@@ -5,6 +5,7 @@ class Bomb extends Component {
 
     constructor (props) {
         super()
+        // console.log(props)
         this.state = {
             secondsLeft: props.initialCount
 
@@ -13,12 +14,12 @@ class Bomb extends Component {
 
     bom () {
         if(this.state.secondsLeft ===120){
-         return   <h6>{this.state.secondsLeft}seconds left before I go boom!</h6>
+         return   <h6>{this.state.secondsLeft} seconds left before I go boom!</h6>
 
         }
         else {
             if(this.state.secondsLeft===0){
-               return <h6>Bom!</h6>
+               return <h6>Boom!</h6>
             }
         }
     }

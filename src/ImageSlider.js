@@ -11,7 +11,7 @@
         }
     }
      render() {
-         return(<h6>{this.state.currentSlideIndex}</h6>)
+         return(<h6>I am on slide {this.state.currentSlideIndex}</h6>)
      }
  }
  export default ImageSlider
